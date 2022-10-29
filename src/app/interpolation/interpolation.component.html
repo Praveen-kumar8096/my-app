@@ -1,0 +1,79 @@
+<p>interpolation works!</p>
+<h4>My name is {{ name }}</h4>
+<h4>Age is {{ age }}</h4>
+<h3>is Indian {{ isIndian }}</h3>
+<h3 *ngFor="let age of ages">{{ age }}</h3>
+
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+<h4 *ngFor="let product of products">{{product.name}}{{product.price}} @koti</h4>
+
+<table border="1">
+    <thead>
+       <tr>
+            <th>name</th>
+            <th>price</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+        </tr>
+    </tbody>
+</table>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Qualification</th>
+            <th>School</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let education of educations">
+            <td>{{education.qualification}}</td>
+            <td>{{education.school}}</td>
+            <td>{{education.year}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table border="1">
+    <thead>
+        <tr>
+           
+            <th>Vehicle</th>
+            <th>Manifacturer</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Fuel</th>
+            <th>Color</th>
+            <th>Image</th>
+            <th>Id</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+           
+        
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.manufacturer}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.type}}</td>
+            <td>{{vehicle.fuel}}</td>
+            <td>{{vehicle.color}}</td>
+            
+           
+            <td>
+                <img src="{{vehicle.image}}" width="100px" height="100px">
+
+            </td>
+            <td>{{vehicle.id}}</td>
+
+        </tr>
+    </tbody>
+</table>

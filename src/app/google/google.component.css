@@ -1,0 +1,46 @@
+
+.one{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+
+}
+div.relative{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    top: 100px;
+
+}
+.second{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    
+}
+input{
+
+   
+    justify-content: center;
+    width: 500px;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.third{
+    display: flex;
+   justify-content: space-evenly;
+    
+   
+    
+}
+
+    
+

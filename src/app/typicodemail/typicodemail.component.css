@@ -1,0 +1,37 @@
+
+thead.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    
+}  
+    
+
+.three:hover{
+    box-shadow: 10px 8px 8px ;
+    background-color: rgb(208, 227, 231);
+    border-collapse: collapse;
+    cursor: pointer;
+    border-radius: 15px; 
+    border: rgba(170, 167, 165, 0.712);
+    height: 40px;
+    text-align: justify;
+   
+
+}
+/* tr{
+    text-align: center;
+    box-shadow: 6px 6px 6px;
+} */
+
+/* .visited {
+    background-color: rgb(94, 161, 224);
+}
+.unvisited{
+    background-color: rgb(177, 71, 136);
+} */
+p{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    
+}

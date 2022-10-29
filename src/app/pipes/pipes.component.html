@@ -1,0 +1,22 @@
+<p>predefined pipes!</p>
+<h5>Predefined pipes </h5>
+<h1>{{ name | uppercase }}</h1>
+<h1>{{ city | lowercase }}</h1>
+<h6>{{ dob | date }}</h6>
+<h1>{{ dob | date: 'yyyy/MM/dd' }}</h1>
+<h1>{{ dob | date: 'yyyy-MM-dd' }}</h1>
+<h6>{{ today  }}</h6>
+<h1>{{ today| date:'full'}}</h1>
+<h1>{{ today| date:'fullDate'}}</h1>
+<h6>{{ today| date:'short'}}</h6>
+<h6>{{ today| date:'medium'}}</h6>
+<h6>{{ today| date:'h:mm:ss a'}}</h6>
+<h6>{{ today| date:'h:mm a'}}</h6>
+<h5>{{ user }}</h5>
+<h2>custom pipes</h2>
+<p>ng g p pipeName( create the pipe (ng g p pipename) )</p>
+<h5>{{ user | json }}</h5>
+
+<h2>{{ price | price}}</h2>
+<h2>{{ age | age}}</h2>
+<h2>{{ marks | percentage}}</h2>

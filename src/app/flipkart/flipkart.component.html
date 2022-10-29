@@ -1,0 +1,16 @@
+<div  class="list">
+    <div class="item" *ngFor="let account of accounts">
+        <div><p>{{ account.id }}</p></div >
+        <div><img src="{{ account.image }}" width="100px" height="100px"></div >
+        <div><p>{{ account.title}}</p></div >
+        <div><p> {{ account.price | price}} </p></div >
+        <div><p>{{ account.description}}</p></div >
+        <div> <p>{{ account.category}}</p></div >
+        <div><p>rating: {{ account.rating.rate }}</p></div>
+        <div><p>count: {{ account.rating.count }}</p></div>
+            
+        
+    </div>
+   
+    
+</div>
