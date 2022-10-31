@@ -28,6 +28,7 @@ export class CreateAccountComponent implements OnInit {
     this._bankService.createAccount(this.accountForm.value).subscribe(
       (data:any)=>{
         alert("created successfully");
+        
       },
       (error:any)=>{
         alert("internal server error");

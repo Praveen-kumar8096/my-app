@@ -1,0 +1,17 @@
+<form [formGroup]="userForm">
+    <label>Name</label>
+    <input type="text" formControlName="name"><br>
+    <label>Phone</label>
+    <input type="number" formControlName="phone"><br>
+    <label>DOB</label>
+    <input type="date" formControlName="dob"><br>
+    <br>
+    <h2>Address</h2>
+    <div formGroupName="address">
+        <label>city:</label>
+        <input type="text" formControlName="city"><br>
+        <label>pin:</label>
+        <input type="number" formControlName="pin">
+    </div>
+    <button (click)="submit()" class="btn btn-primary">SUBMIT</button>
+</form>

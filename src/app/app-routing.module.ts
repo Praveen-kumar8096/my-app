@@ -8,6 +8,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
@@ -48,7 +49,6 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
     {path:'amazon',component:AmazonComponent},
     {path:'google',component:GoogleComponent},
-  
     {path:'pipes',component:PipesComponent},
     {path:'cars',component:CarsComponent},
     {path:'star',component:StarComponent},
@@ -62,7 +62,8 @@ const routes: Routes = [
     {path:'typicodemail', component:TypicodemailComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'bank-details/:id',component:BankDetailsComponent},
-    {path:'create-account', canDeactivate:[NotifyGuard], component:CreateAccountComponent}
+    {path:'create-account', canDeactivate:[NotifyGuard], component:CreateAccountComponent},
+    {path:'create-user',component:CreateUserComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
