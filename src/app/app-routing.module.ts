@@ -64,7 +64,8 @@ const routes: Routes = [
     {path:'bank-details/:id',component:BankDetailsComponent},
     {path:'create-account', canDeactivate:[NotifyGuard], component:CreateAccountComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'create-product',component:CreateUserComponent}
+    {path:'create-product',component:CreateUserComponent},
+    {path:'edit-account/:id', component:CreateAccountComponent}
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

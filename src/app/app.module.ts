@@ -40,6 +40,10 @@ import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductComponent } from './create-product/create-product.component';
+import { ProductComponent } from './product/product.component';
+import { NavComponent } from './nav/nav.component';
+import { CartsComponent } from './carts/carts.component';
+import { CommonComponent } from './common/common.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +82,11 @@ import { CreateProductComponent } from './create-product/create-product.componen
     BankDetailsComponent,
     CreateAccountComponent,
     CreateUserComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    ProductComponent,
+    NavComponent,
+    CartsComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,

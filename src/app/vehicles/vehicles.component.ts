@@ -85,7 +85,7 @@ export class VehiclesComponent implements OnInit {
         location.reload();
       },
       (error:any)=>{
-        alert("internal server ");
+        alert("internal server");
       }
     )
   }

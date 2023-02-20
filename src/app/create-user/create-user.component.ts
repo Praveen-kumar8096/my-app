@@ -17,7 +17,7 @@ export class CreateUserComponent implements OnInit {
       address:new FormGroup(
         {
           city:new FormControl(),
-          pin:new FormControl()
+          pin:new FormControl(null,[Validators.required,Validators.min(500000),Validators.max(510000)])
         }
 
       ),
@@ -37,7 +37,7 @@ export class CreateUserComponent implements OnInit {
         {
           name:new FormControl(),
           expiry:new FormControl(),
-          cvv:new FormControl()
+          cvv:new FormControl(null,[Validators.required,Validators.min(100),Validators.max(999)])
         }
       )
     )
@@ -49,6 +49,7 @@ export class CreateUserComponent implements OnInit {
   }
   submit(){
     console.log(this.userForm);
+    this.userForm.markAllAsTouched();
   }
   delete(i:number){
     this.cardsFormArray.removeAt(i);

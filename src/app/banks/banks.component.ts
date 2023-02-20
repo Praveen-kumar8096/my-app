@@ -62,6 +62,10 @@ export class BanksComponent implements OnInit {
     this._router.navigateByUrl("/dashboard/bank-details/"+id);
 
   }
+  edit(id:string){
+    this._router.navigateByUrl('/dashboard/edit-account/'+id);
+
+  }
   
 
 
